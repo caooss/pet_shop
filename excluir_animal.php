@@ -5,7 +5,7 @@
 
     $sql="DELETE FROM animal WHERE id=$id";
 
-    header("Location: cons_animais.php");
+    header("Location: ./cons/cons_animais.php");
 
     include('./inc/rodape_conexao.php');
 ?>
