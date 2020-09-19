@@ -43,8 +43,8 @@
                                             <td>'.$resultado["raca"].'</td>
                                             <td>'.$resultado["nome"].'</td>
                                             <td>'.$resultado["dono_rg"].'</td>
-                                            <td><button><a href="">Editar</a></button></td>
-                                            <td><button><a href="../excluir_animal.php?id='.$resultado["id"].'">Excluir</a></button></td>
+                                            <td><button><a href="../editar/editar_animal.php?id='.$resultado["id"].'">Editar</a></button></td>
+                                            <td><button><a href="../excluir/excluir_animal.php?id='.$resultado["id"].'">Excluir</a></button></td>
                                           </tr>';
                                 }
                                 echo '</table>';
@@ -56,7 +56,7 @@
                     echo mysqli_error($con);
                 }
 
-                echo '<button><a href="../index.php">Voltar</a></button>';
+                echo '<br><button><a href="../index.php">Voltar</a></button>';
                 mysqli_close($con);
             }
 

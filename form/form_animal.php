@@ -1,8 +1,8 @@
 <?php
     include("../inc/cabecalho.php");
     include("../inc/cabecalho_conexao.php");
-?>
 
+?>
         <form action="../cad/cad_animal.php" method="post">
             <fieldset>
                 <label>Tipo</label>
@@ -18,7 +18,7 @@
                 <input type="text" name="raca"/>
 
                 <label>Nome</label>
-                <input type="nome" name="nome"/>
+                <input type="text" name="nome"/>
 
                 <label>RG do Dono</label>
                     <?php
