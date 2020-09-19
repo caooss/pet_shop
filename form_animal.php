@@ -41,6 +41,7 @@
                         }
                     ?>
                 <input type="submit" value="Enviar"/>
+                <button><a href="index.php">Voltar</a></button>
             </fieldset>
         </form>
 
