@@ -13,6 +13,7 @@
                         <th>Raça</th>
                         <th>Nome</th>
                         <th>RG do Dono</th>
+                        <th colspan=2>Ação</th>
                     </tr>';
             while (($resultado=mysqli_fetch_assoc($query))!=null) {
                 echo '<tr>
@@ -21,6 +22,8 @@
                         <td>'.$resultado["raca"].'</td>
                         <td>'.$resultado["nome"].'</td>
                         <td>'.$resultado["dono_rg"].'</td>
+                        <td><button><a href="">Editar</a></button></td>
+                        <td><button><a href="excluir_animal.php?id='.$resultado["id"].'">Excluir</a></button></td>
                       </tr>';
             }
             echo "</table>";
